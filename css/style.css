@@ -37,3 +37,6 @@ li a:hover {
   z-index: 9;
   background: #1a1a1a;
 }
+footer {
+  display: block;
+}
