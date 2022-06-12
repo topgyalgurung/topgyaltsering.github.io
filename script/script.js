@@ -16,4 +16,12 @@ const menuToggle = document.getElementById('navbarSupportedContent')
 
 navLinks.forEach((l) => {
     l.addEventListener('click', () => { new bootstrap.Collapse(menuToggle).toggle() })
-})
+
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
