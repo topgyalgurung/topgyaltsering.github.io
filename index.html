@@ -4,49 +4,15 @@
 <meta charset="UTF-8" />
 <title>Topgyal Gurung</title>
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<!-- <link rel="stylesheet" href="style.css" /> -->
+<link rel="stylesheet" href="style.css" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://www.w3schools.com/lib/w3.js"></script>
+<!-- bootstrap CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+ <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-<style>
-    body {
-        font-family: "Open Sans", sans-serif
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: "Lucida Console", monospace;
-        letter-spacing: 5px
-    }
-
-    .w3-row-padding img {
-        margin-bottom: 12px
-    }
-
-
-    /* Set the width of the sidebar to 120px */
-    .w3-sidebar {
-        width: 120px;
-        background: wheat;
-    }
-
-    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-    #main {
-        margin-left: 120px
-    }
-
-    /* Remove margins from "page content" on small screens */
-    @media only screen and (max-width: 600px) {
-        #main {
-            margin-left: 0
-        }
-    }
-</style>
 
 <body class="w3-light-grey">
     <div class="w3-top w3-bar w3-white w3-padding w3-card w3-wide">
@@ -146,13 +112,32 @@
             Elmhurst, NY<br />
             Phone: 347-935-9179<br />
             Email: topgylatsering3@gmail.com<br />
-            <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+
+        <!-- netlify form setup -->
+        <form name="contact" method="POST" data-netlify="true">
+
+            <p>
+              <label>Your Name: <input type="text" name="name" /></label>
+            </p>
+            <p>
+              <label>Your Email: <input type="email" name="email" /></label>
+            </p>
+            <p>
+              <label>Message: <textarea name="message"></textarea></label>
+            </p>
+            <p>
+              <button type="submit">Send</button>
+            </p>
+          </form>
+
+          <!-- form ends -->
+
             <div style="max-width:100%;list-style:none; transition: none;overflow:hidden;width:500px;height:500px;">
-                <div id="mymap-display" style="height:100%; width:100%;max-width:100%;">
-                    <iframe style="height:100%;width:100%;border:0;" frameborder="0"
+                <div id="mymap-display" style="height:100%; width:100%;max-width:100%;"><iframe
+                        style="height:100%;width:100%;border:0;" frameborder="0"
                         src="https://www.google.com/maps/embed/v1/place?q=11373&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
-                </div>
-                <a class="googlemaps-html" href="https://changing.hosting" id="grabmap-authorization">now</a>
+                </div><a class="googlemaps-html" href="https://changing.hosting" id="grabmap-authorization">Changing
+                    Hosting</a>
                 <style>
                     #mymap-display img.text-marker {
                         max-width: none !important;
@@ -165,21 +150,36 @@
                 </style>
             </div>
 
-
-            <!-- Footer -->
-            <div>
-                <footer class="w3-center w3-content w3-padding-64 w3-text-white w3-xlarge">
-                    <a href="https://twitter.com/tseringtopke" target="_blank"><i
-                            class="fa fa-twitter w3-hover-opacity"></i></a>
-                    <a href="https://www.linkedin.com/in/topgyaltsering/" target="_blank"><i
-                            class="fa fa-linkedin w3-hover-opacity"></i></a>
-                    <a href="https://topgyaltsering.medium.com/" target="_blank"><i
-                            class="fa fa-medium w3-hover-opacity"></i></a>
-
-                    <!-- End footer -->
-                </footer>
-            </div>
         </div>
+
+
+
+
+        <!-- Footer -->
+        <div class="container-fluid">   
+            <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+            <h6 class="w3-center">Click to Follow </h6>
+            
+            <footer class="w3-center w3-content w3-padding-64 w3-text-red w3-xlarge" id="footer">
+                <!-- social media icons -->
+            <!-- <div class="social-icons mt-4">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+            </div> -->
+                <a href="https://twitter.com/tseringtopke" target="_blank"><i
+                        class="fa fa-twitter w3-hover-opacity"></i></a>
+                <a href="https://www.linkedin.com/in/topgyaltsering/" target="_blank"><i
+                        class="fa fa-linkedin w3-hover-opacity"></i></a>
+                <a href="https://topgyaltsering.medium.com/" target="_blank"><i
+                        class="fa fa-medium w3-hover-opacity"></i></a>
+
+                <!-- End footer -->
+            </footer>
+        </div>
+    </div>
 
 </body>
 
