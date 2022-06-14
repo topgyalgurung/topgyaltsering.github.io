@@ -3,8 +3,9 @@
 <html lang="en">
 <meta charset="UTF-8" />
 <title>Topgyal Gurung</title>
-<meta name="viewport" content="width=device-width,initial-scale=1" />
+
 <!-- make html good on all devices -->
+<meta name="viewport" content="width=device-width,initial-scale=1" />
 
 <link rel="stylesheet" href="style.css" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
@@ -14,7 +15,7 @@
 <!-- font awesome -->
 <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
 <!-- link javascript -->
-<script src="/script/script.js"></script> 
+<script src="/script/script.js"></script>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 
 <body class="w3-black">
@@ -22,17 +23,18 @@
         <a href="#home" class="w3-bar-item w3-button active">Topgyal Gurung</a>
 
         <!-- Navigation (Stays on Top) -->
-        <div class="w3-right w3-hide-small" id="myLinks">
+        <div class="w3-right w3-hide-small overlay-content" id="myLinks">
             <a href="#home" class="w3-bar-item w3-button">Home</a>
             <a href="#about" class="w3-bar-item w3-button">About</a>
             <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
             <a href="#contact" class="w3-bar-item w3-button">Contact</a>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
-
-
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        </a>
+    </div>
+    <!-- Use any element to open/show the overlay navigation menu -->
+    <span onclick="openNav()">open</span>
     </div>
     <!-- Home -->
     <div class="w3-padding-large" id="main">
@@ -82,7 +84,7 @@
             </p>
         </div>
 
-        <!-- skills -->
+        <!-- skills
         <div class="skill-section">
             <h1 class="heading">skills</h1>
             <div class="skills-container">
@@ -122,13 +124,11 @@
                     <h1 class="skill-name">Problem solving</h1>
                     <p class="skill-info"> </p>
                 </div>
-
-
             </div>
-        </div>
+        </div> -->
 
-        <!-- timeline -->
-        <div class="timeline">
+        <!-- timeline --> 
+            <!-- <div class="timeline">
             <h1 class="heading">education and experience</h1>
             <div class="card">
                 <div class="card-body">
@@ -160,10 +160,7 @@
                     <h1 class="card-title">Sep 2017 - Dec 2019</h1>
                     <p class="card-detail">BACHELOR OF COMPUTER SCIENCE, 3.2 GPA</p>
                 </div>
-            </div>
-
-
-
+             </div>  -->
 
 
             <!-- Portfolio Section -->
@@ -193,7 +190,7 @@
                         </a>
                     </p>
                 </div>
-            </div>
+            </div> 
 
             <!-- End Portfolio Section -->
 
