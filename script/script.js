@@ -1,3 +1,4 @@
+
 // add class navbarDark on navbar scroll
 const header = document.querySelector('.navbar');
 console.log(header)
@@ -25,6 +26,7 @@ navLinks.forEach((l) => {
         x.style.display = "block";
       }
     }
+  }
 /* Open when someone clicks on the span element */
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
@@ -34,3 +36,4 @@ function openNav() {
   function closeNav() {
     document.getElementById("myNav").style.width = "0%";
   }
+
