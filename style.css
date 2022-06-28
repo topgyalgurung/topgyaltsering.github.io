@@ -1,53 +1,65 @@
 
-    body {
-        font-family: "Open Sans", sans-serif;
-        margin:0;
-        padding: 1%;
-        font-size: 100%;
-
-    }
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: "Lucida Console", monospace;
-        letter-spacing: 5px
-    }
-
     .w3-row-padding img {
         margin-bottom: 12px
     }
-
+    body {
+        font-size: 48px;
+      }
+      div:nth-child(1) {
+        font-family: 'Crimson Pro', serif;
+      }
+      div:nth-child(2) {
+        font-family: 'Literata’, serif;
+      }
 
     /* Set the width of the sidebar to 120px */
     .w3-sidebar {
         width: 120px;
         background: wheat;
     }
+  /* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    float:right;
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #04AA6D;
+    color: white;
+  }
 
-    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-    #main, #subnav {
-        float:left;
-        padding:0%;
-        width:94%;
-        margin:3%
-    }
-
-    /* Remove margins from "page content" on small screens */
-     /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-    @media only screen and (max-width: 481px) {
-        .overlay a {font-size: 20px}
-    .overlay .closebtn {
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
-    }
-        #main {
-            margin-left: 0
-        }
-    }
 
     /* footer styling */
 #footer {
@@ -55,345 +67,4 @@
     text-align: center;
 }
 
-
-.skill-section{
-    position: relative;
-    margin: 100px 0;
-}
-
-.heading{
-    text-align: center;
-    font-size: 60px;
-    color: #fff;
-    text-transform: capitalize;
-    font-weight: 300;
-    margin-bottom: 100px;
-}
-
-.skills-container{
-    width: 95%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 100px;
-    color: #fff;
-}
-
-.skill-card{
-    position: relative;
-}
-
-.skill-img{
-    display: block;
-    margin: auto;
-    height: 200px;
-}
-
-.skill-name{
-    font-size: 30px;
-    font-weight: 300;
-    text-align: center;
-    text-transform: capitalize;
-    margin: 30px 0 20px;
-}
-
-.skill-info{
-    text-align: center;
-    opacity: 0.5;
-    font-size: 18px;
-    line-height: 30px;
-}
-
-.skill-level{
-    position: absolute;
-    top: 80px;
-    right: 0;
-    width: 150px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 22px;
-    border-radius: 50%;
-    border: 10px solid;
-}
-
-.skill-card:nth-child(1) .skill-level{
-    background: #ff4f4f28;
-    border-color: #ff4f4f;
-    color: #ff4f4f;
-}
-
-.skill-card:nth-child(2) .skill-level{
-    background: #4fa0ff28;
-    border-color: #4fa0ff;
-    color: #4fa0ff;
-}
-
-.skill-card:nth-child(3) .skill-level{
-    background: #ffed4f28;
-    border-color: #ffed4f;
-    color: #ffed4f;
-}
-
-.skill-card:nth-child(4) .skill-level{
-    background: #52ff4f28;
-    border-color: #52ff4f;
-    color: #52ff4f;
-}
-
-.skill-card:nth-child(5) .skill-level{
-    background: #4fdfff28;
-    border-color: #4fdfff;
-    color: #4fdfff;
-}
-
-/* skills */
-
-.skill-section{
-    position: relative;
-    margin: 100px 0;
-}
-
-.heading{
-    text-align: center;
-    font-size: 60px;
-    color: #fff;
-    text-transform: capitalize;
-    font-weight: 300;
-    margin-bottom: 100px;
-}
-
-.skills-container{
-    width: 95%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 100px;
-    color: #fff;
-}
-
-.skill-card{
-    position: relative;
-}
-
-.skill-img{
-    display: block;
-    margin: auto;
-    height: 200px;
-}
-
-.skill-name{
-    font-size: 30px;
-    font-weight: 300;
-    text-align: center;
-    text-transform: capitalize;
-    margin: 30px 0 20px;
-}
-
-.skill-info{
-    text-align: center;
-    opacity: 0.5;
-    font-size: 18px;
-    line-height: 30px;
-}
-
-.skill-level{
-    position: absolute;
-    top: 80px;
-    right: 0;
-    width: 150px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 22px;
-    border-radius: 50%;
-    border: 10px solid;
-}
-
-.skill-card:nth-child(1) .skill-level{
-    background: #ff4f4f28;
-    border-color: #ff4f4f;
-    color: #ff4f4f;
-}
-
-.skill-card:nth-child(2) .skill-level{
-    background: #4fa0ff28;
-    border-color: #4fa0ff;
-    color: #4fa0ff;
-}
-
-.skill-card:nth-child(3) .skill-level{
-    background: #ffed4f28;
-    border-color: #ffed4f;
-    color: #ffed4f;
-}
-
-.skill-card:nth-child(4) .skill-level{
-    background: #52ff4f28;
-    border-color: #52ff4f;
-    color: #52ff4f;
-}
-
-.skill-card:nth-child(5) .skill-level{
-    background: #4fdfff28;
-    border-color: #4fdfff;
-    color: #4fdfff;
-}
-
-/* timeline */
-
-.timeline{
-    display: block;
-    width: 80%;
-    margin: 150px auto;
-}
-
-.timeline .heading{
-    margin-bottom: 150px;
-}
-
-.card{
-    width: 45%;
-    padding: 30px;
-    border-radius: 10px;
-    color: #fff;
-    display: block;
-    margin: -80px 0;
-    position: relative;
-    background: #f00;
-}
-
-.card:nth-child(even){
-    margin-left: auto;
-}
-
-.card:nth-child(even):before{
-    content: '';
-    position: absolute;
-    left: -15%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
-    border: 5px solid #191919;
-    border-radius: 50%;
-}
-
-.card:nth-child(even):after{
-    content: '';
-    position: absolute;
-    left: -8.5%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 7%;
-    height: 2px;
-    background: #fff;
-    z-index: -1;
-}
-
-.card:nth-child(odd):before{
-    content: '';
-    position: absolute;
-    right: -13%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
-    border: 5px solid #191919;
-    border-radius: 50%;
-}
-
-.card:nth-child(odd):after{
-    content: '';
-    position: absolute;
-    right: -8.5%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 7%;
-    height: 2px;
-    background: #fff;
-    z-index: -1;
-}
-
-.card:nth-child(2), .card:nth-child(2):before{
-    background: #ff4f4f;
-}
-.card:nth-child(3), .card:nth-child(3):before{
-    background: #ffb84f;
-}
-.card:nth-child(4), .card:nth-child(4):before{
-    background: #3dca5c;
-}
-.card:nth-child(5), .card:nth-child(5):before{
-    background: #565252;
-}
-.card:nth-child(6), .card:nth-child(6):before{
-    background: #4fa0ff;
-}
-
-.card:nth-child(even) .card-body:before{
-    content: '';
-    position: absolute;
-    left: -12%;
-    top: 0;
-    width: 0px;
-    height: 100%;
-    border: 1px dashed #fff;
-    z-index: -1;
-}
-
-.card-title{
-    font-size: 30px;
-    font-weight: 300;
-    margin-bottom: 20px;
-}
-
-/* The Overlay (background) */
-.overlay {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
-    height: 100%;
-    width: 0;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    background-color: rgb(0,0,0); /* Black fallback color */
-    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-  }
-  
-  /* Position the content inside the overlay */
-  .overlay-content {
-    position: relative;
-    top: 25%; /* 25% from the top */
-    width: 100%; /* 100% width */
-    text-align: center; /* Centered text/links */
-    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
-  }
-
-/* The navigation links inside the overlay */
-.overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block; /* Display block instead of inline */
-    transition: 0.3s; /* Transition effects on hover (color) */
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-  }
-  
-  /* Position the close button (top right corner) */
-  .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-  }
   
