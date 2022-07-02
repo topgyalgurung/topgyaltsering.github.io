@@ -35,21 +35,34 @@
 <body class="w3-black">
     <div class="w3-top w3-bar w3-white w3-padding w3-card w3-wide ">
 
-        <a href="#home" class="active ">Topgyal Gurung</a>
-
         <!-- Navigation (Stays on Top) -->
-        <div class="w3-right w3-hide-small" id="myLinks">
-            <a href="#home" class="w3-bar-item w3-button">Home</a>
-            <a href="#about" class="w3-bar-item w3-button">About</a>
-            <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
-            <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-        </div>
- </div>
+        <div class="w3-bar " id="myLinks">
+            <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-text-black w3-hover-text-red"><i
+                    class="fa fa-home"></i></a>
+            <a href="#about"
+                class="w3-bar-item w3-button w3-hover-none w3-text-black w3-hover-text-red w3-hide-small ">About</a>
+            <a href="#portfolio"
+                class="w3-bar-item w3-button w3-hover-none w3-text-black w3-hover-text-red w3-hide-small">Portfolio</a>
+            <a href="#contact"
+                class="w3-bar-item w3-button w3-hover-none w3-text-black w3-hover-text-red w3-hide-small">Contact</a>
+            <input type="text" class="w3-bar-item w3-input" placeholder="Search.."> <a href="#search"
+                class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-search"></i></a>
 
-        <!-- Use any element to open/show the overlay navigation menu -->
-        <span onclick="openNav()">open</span>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+        </div>
     </div>
-    
+    <div id="demo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">
+        <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-text-black w3-hover-text-red w3-mobile"><i
+            class="fa fa-home"></i></a>
+    <a href="#about"
+        class="w3-bar-item w3-button">About</a>
+    <a href="#portfolio"
+        class="w3-bar-item w3-button ">Portfolio</a>
+    <a href="#contact"
+        class="w3-bar-item w3-button">Contact</a>
+    <input type="text" class="w3-bar-item w3-input" placeholder="Search.."> <a href="#search"
+        class="w3-bar-item w3-button"><i class="fa fa-search"></i></a>
+    </div>
     <!-- Home -->
     <div class="w3-padding-large" id="main">
         <!-- Header/Home -->
