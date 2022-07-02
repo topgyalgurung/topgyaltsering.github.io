@@ -1,70 +1,30 @@
 
-    .w3-row-padding img {
-        margin-bottom: 12px
-    }
-    body {
-        font-size: 48px;
-      }
-      div:nth-child(1) {
-        font-family: 'Crimson Pro', serif;
-      }
-      div:nth-child(2) {
-        font-family: 'Literata’, serif;
-      }
-
-    /* Set the width of the sidebar to 120px */
-    .w3-sidebar {
-        width: 120px;
-        background: wheat;
-    }
-  /* Style the navigation menu */
-.topnav {
-    overflow: hidden;
-    background-color: #333;
-    position: relative;
+   .w3-row-padding img {
+    margin-bottom: 12px
+}
+body {
+    font-size: 48px;
   }
-  
-  /* Hide the links inside the navigation menu (except for logo/home) */
-  .topnav #myLinks {
-    display: none;
+  div:nth-child(1) {
+    font-family: 'Crimson Pro', serif;
   }
-  
-  /* Style navigation menu links */
-  .topnav a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-  }
-  
-  /* Style the hamburger menu */
-  .topnav a.icon {
-    float:right;
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  
-  /* Add a grey background color on mouse-over */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Style the active link (or home/logo) */
-  .active {
-    background-color: #04AA6D;
-    color: white;
+  div:nth-child(2) {
+    font-family: 'Literata’, serif;
   }
 
-
-    /* footer styling */
-#footer {
-    background-color:whitesmoke;
-    text-align: center;
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {
+    width: 120px;
+    background: wheat;
 }
 
-  
+
+
+
+
+/* footer styling */
+#footer {
+background-color:whitesmoke;
+text-align: center;
+}
+
