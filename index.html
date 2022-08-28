@@ -4,9 +4,10 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Topgyal Gurung</title>
+    <title>Topgyal Website</title>
 
     <!-- make html good on all devices -->
+    <!-- responsive design -->
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <!-- link javascript -->
     <script src="/script/script.js"></script>
@@ -23,7 +24,6 @@
 
     <!-- bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -39,6 +39,7 @@
 </head>
 
 <body class="w3-black">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <div class="w3-top w3-bar w3-white w3-padding w3-card w3-wide ">
 
         <!-- Navigation (Stays on Top) -->
@@ -109,11 +110,16 @@
                     SSRS for report and Microsoft Power BI and Tableau for data
                     visualization.
                 </li>
-                <button class="w3-button w3-light-grey w3-padding-large w3-section">
+                <!-- bootstrap button -->
+                <button type="button" class="btn btn-warning btn-outline-light">
+                    <a href="./assets/pdf/Topgyal_Gurung_Resume.pdf">View Resume</a>
+                </button>
+                <!-- w3 css button -->
+                <!-- <button class="w3-button w3-light-grey w3-padding-large w3-section">
                     <a class="fa fa-download" href="./assets/pdf/Topgyal_Gurung_Resume.pdf" download>Download Resume</a>
                     </a>
-                    <!-- <i class="fa fa-download"></i> Download Resume -->
-                </button>
+                    <!-- <i class="fa fa-download"></i> Download Resume 
+                    </button>-->
             </p>
         </div>
 
@@ -121,9 +127,10 @@
         <!-- Portfolio Section -->
 
         <section id="portfolio" class="services-mf pt-5 route">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
+            <!-- first element when setting up bootstrap is container element, need before we use bootstrap grid system   -->
+            <div class="container">   <!-- container -->
+                <div class="row">      <!-- row -->
+                    <div class="col-sm-12"> <!-- column -->
                         <div class="title-box text-center">
                             <h3 class="title-a w3-text-lime">
                                 Portfolio
@@ -136,13 +143,13 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="service-box">
                             <div class="service-content">
                                 <h2 class="s-title"> Portfolio</h2>
                                 <a href="https://topgyaltsering.com/cv/">
-                                    <img src="https://www.mediabistro.com/wp-content/uploads/2016/02/tips-on-getting-your-copywriter-portfolio-started.jpg"
-                                        alt="topgyaltsering" class="w3-image" width="180" height="180">
+                                    <img src="https://www.actitime.com/wp-content/uploads/2021/05/How-to-Build-a-Great-Developer-Portfolio.png" class="img-fluid" >
+                                        <!-- image fluid image scales to parent column width instead of manually setting the size -->
                                 </a>
                                 <p class="s-description text-center">
                                     Contains experiences, projects and certificates
@@ -151,13 +158,12 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="service-box">
                             <div class="service-content">
                                 <h2 class="s-title">Blogs</h2>
                                 <a href="https://topgyaltsering.medium.com">
-                                    <img src="https://miro.medium.com/max/1200/1*jfdwtvU6V6g99q3G7gq7dQ.png"
-                                        alt="medium" class="w3-image" width="222" height="211">
+                                    <img src="https://miro.medium.com/max/1200/1*jfdwtvU6V6g99q3G7gq7dQ.png" class="img-fluid">
                                 </a>
 
                                 <p class="s-description text-center">
@@ -166,13 +172,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="service-box">
                             <div class="service-content">
                                 <h2 class="s-title">Data Science </h2>
                                 <a href="https://medium.com/data-revolution">
                                     <img src="https://miro.medium.com/max/878/0*uwduHzHYTM7z5VF_.jpeg" alt="medium"
-                                        class="w3-image" width="222" height="211">
+                                        class="img-fluid">
                                 </a>
                                 <p class="s-description text-center">
                                     Big Data, machine learning and database blogs
@@ -180,14 +186,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-4">
+                    <!-- <div class="row"> -->
+                        <div class="col-md-3">
                             <div class="service-box">
                                 <div class="service-content">
                                     <h2 class="s-title">Cyber Security</h2>
                                     <a href="https://medium.com/cybersecured">
-                                        <img src="https://www.foodsafetynews.com/files/2022/04/cybersecurity.jpg"
-                                            alt="medium" class="w3-image" width="222" height="211">
+                                        <img src="https://www.foodsafetynews.com/files/2022/04/cybersecurity.jpg" class="img-fluid" >
                                     </a>
                                     <p class="s-description text-center">
                                         Cybersecurity resources
@@ -195,7 +200,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    <!-- </div> -->
                 </div>
                 </div>
         </section>
@@ -248,6 +253,11 @@
     </div>
 
     <!-- Footer -->
+    <div class="container">
+        <div class="row">
+            <div class="col-"
+        </div>
+    </div>
     <div class="container-fluid text-center ">
 
         <footer class="w3-center w3-content w3-padding-large w3-text-black w3-xlarge" id="footer">

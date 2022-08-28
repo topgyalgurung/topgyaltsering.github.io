@@ -1,4 +1,6 @@
-
+.w3-row-padding img {
+    margin-bottom: 12px
+}
 body {
     font-size: 48px;
   }
