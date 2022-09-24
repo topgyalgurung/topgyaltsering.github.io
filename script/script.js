@@ -6,3 +6,6 @@ function myFunction() {
     x.className = x.className.replace(" w3-show", "");
   }
 }
+
+var d = new Date(); 
+page.currentYear = d.getFullYear();
