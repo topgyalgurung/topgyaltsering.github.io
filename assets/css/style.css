@@ -1,5 +1,9 @@
 .w3-row-padding img {
-    margin-bottom: 12px
+    margin-bottom: 12px;
+    margin: 1px 2px 4px 5px;
+}
+{
+
 }
 body {
     font-size: 48px;
@@ -10,8 +14,14 @@ body {
 background-color:whitesmoke;
 text-align: center;
 border-width:medium;
+
 }
 
+#photo{
+  margin:auto;
+  padding:2px 2px 1px 1px;
+  border-width:2px 3px 1px 4px;
+}
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
