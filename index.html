@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <title>Topgyal Website</title>
 
     <!-- make html good on all devices -->
     <!-- responsive design -->
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" /> 
+    <!-- device-width is 100vw or 100% of viewport -->
     <!-- link javascript -->
     <script src="/script/script.js"></script>
     <!-- link css  -->
@@ -34,8 +33,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
 </head>
 
 <body class="w3-black">
@@ -51,8 +48,7 @@
                 class="w3-bar-item w3-button w3-hover-none w3-text-black w3-hover-text-red w3-hide-small ">About</a>
             <a href="#portfolio"
                 class="w3-bar-item w3-button w3-hover-none w3-text-black w3-hover-text-red w3-hide-small">Portfolio</a>
-                <a href="#blog"
-                class="w3-bar-item w3-button w3-hover-none w3-text-black w3-hover-text-red w3-hide-small">Blog</a>
+                
             <a href="#contact"
                 class="w3-bar-item w3-button w3-hover-none w3-text-black w3-hover-text-red w3-hide-small">Contact</a>
             <input type="text" class="w3-bar-item w3-input w3-hide-small" placeholder="Search.."> <a href="#search"
@@ -78,56 +74,29 @@
 
         <!-- Header/Home -->
         <header class="w3-container w3-padding-8 w3-center w3-gray" id="home">
-
             <br />
-            <div class="w3-container w3-tooltip w3-center  w3-card-2 " id="photo"style="width: 250px">
-                <img src="/assets/img/topgyal.jpg" class="box" class=""flip-3d" alt="me" style="width: 100%" />
-                <p>Topgyal Gurung</p>
-
-                <div class="w3-container w3-center">
-                    <p class="w3-xlarge"></p>
-                    <p class="w3-text">
-                        <a href="https://twitter.com/tseringtopke" target="_blank"><i
-                            class="fa fa-twitter w3-hover-opacity"></i></a>
-                    <a href="https://www.linkedin.com/in/topgyaltsering/" target="_blank"><i
-                            class="fa fa-linkedin w3-hover-opacity"></i></a>
-                    <a href="https://topgyaltsering.medium.com/" target="_blank"><i
-                            class="fa fa-medium w3-hover-opacity"></i></a>
-                    </p>
-                </div>
+            <!-- <div class="w3-container w3-tooltip w3-center  w3-card-2 " id="photo"style="width: 250px">
+                <img src="/assets/img/topgyal.jpg" class="box" alt="me" style="width: 100%" />
+                <p>Topgyal Gurung</p> -->
             </div>
-            
-<!-- bootstrap card  -->
-            <!-- <div class="row">
-                <div class="col-12 col-lg-6">
-                    <div class="card">
-                        <img src="/assets/img/topgyal.jpg" class="card-img-top">
-                        <div class="card-body">
-                            <h2 class="card-title">Software Engineer </h2>
-                            <p class="card-text"> Computer Science Graduate</p>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-
         </header>
+
         <!-- About -->
         <div class="w3-content w3-justify w3-navy w3-padding-64 title-box text-center" id="about">
             <h2 class="w3-text-white">About me </h2>
             <h1 class="w3-center"></h1>
             <p>
-                Bachelors in Computer Science from Hunter College. Passionate about
-                emerging technologies.
+                Bachelors in Computer Science from Hunter College.
                 <li>
                     Past Data engineering intern experience with real estate predictive
                     analytics company.
                 </li>
                 <li>
-                    Full stack web development summer 2019 bootcamp cohort with CUNY2X
+                    Full Stack Web Development summer 2019 bootcamp cohort with CUNY2X
                     TTP(Tech Talent Pipeline) at Hunter College.
                 </li>
                 <li>
-                    One year machine learning research experience with professor in NLP
+                    Machine learning research experience in NLP
                     and machine translation.
                 </li>
                 <li>
@@ -140,20 +109,13 @@
                 <button type="button" class="btn btn-regular btn-light btn-outline-light">
                     <a href="./assets/pdf/GURUNGTOPGYAL RESUME 92422.pdf">Download Resume</a>
                 </button>
-                <!-- w3 css button -->
-                <!-- <button class="w3-button w3-light-grey w3-padding-large w3-section">
-                    <a class="fa fa-download" href="./assets/pdf/Topgyal_Gurung_Resume.pdf" download>Download Resume</a>
-                    </a>
-                    <!-- <i class="fa fa-download"></i> Download Resume 
-                    </button>-->
             </p>
         </div>
 
-
         <!-- Portfolio Section -->
-
         <section id="portfolio" class="services-mf pt-5 route">
             <!-- first element when setting up bootstrap is container element, need before we use bootstrap grid system   -->
+
             <div class="container">
                 <!-- container -->
                 <div class="row">
@@ -168,6 +130,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="row">
                     <div class="col-md-3">
                         <div class="service-box">
@@ -179,7 +142,7 @@
                                     <!-- image fluid image scales to parent column width instead of manually setting the size -->
                                 </a>
                                 <p class="s-description text-center">
-                                    Contains experiences, projects and certificates
+                                    Experiences, Projects and Certificates
                                 </p>
                             </div>
                         </div>
@@ -195,11 +158,12 @@
                                 </a>
 
                                 <p class="s-description text-center">
-                                    Personal Medium tech articles
+                                    Personal Medium Tech Articles
                                 </p>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-md-3">
                         <div class="service-box">
                             <div class="service-content">
@@ -209,11 +173,12 @@
                                         class="img-fluid" alt="data ">
                                 </a>
                                 <p class="s-description text-center">
-                                    Big Data, machine learning and database blogs
+                                    Big Data, Machine Learning and Database Blogs
                                 </p>
                             </div>
                         </div>
                     </div>
+
                     <!-- <div class="row"> -->
                     <div class="col-md-3">
                         <div class="service-box">
@@ -224,45 +189,19 @@
                                         class="img-fluid">
                                 </a>
                                 <p class="s-description text-center">
-                                    Cybersecurity resources
+                                    Cybersecurity Resources
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <!-- </div> -->
+
                 </div>
             </div>
         </section>
 
         <!-- End Portfolio Section -->
 
-        <!--  CONTACT -->
-        <!-- <div class="w3-content w3-justify w3-text-grey w3-padding-64 title-box text-center" id="contact">
-            <h2 class="w3-text-lime">CONTACT</h2>
-            <hr style="width:200px" class="w3-opacity">
-            Elmhurst, New York<br />
-            Email: topgyaltsering3@gmail.com <br />
-        </div> -->
-
-        <!-- netlify form setup -->
-        <!-- <form name="contact" method="POST" data-netlify="true" onsubmit="submit">
-                        <p>
-                            <label>Your Name: <input type="text" name="name" /></label>
-                        </p>
-                        <p>
-                            <label>Your Email: <input type="email" name="email" /></label>
-                        </p>
-                        <p>
-                            <label>Message: <textarea name="message"></textarea></label>
-                        </p>
-                        <p>
-                            <button type="submit">Send</button>
-                        </p>
-                    </form> -->
-        <!-- form ends -->
-
-
-    </div>
+       
 
     <!-- Footer -->
     <div class="container-fluid text-center w3-padding-8">
@@ -270,7 +209,6 @@
 
             <div class="container">
                 <div class="row">
-
 
                     <div class="col-12 col-lg-6">
                         <div class="title-box text-center w3-padding-small ">

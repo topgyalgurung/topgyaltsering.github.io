@@ -2,8 +2,8 @@
     margin-bottom: 12px;
     margin: 1px 2px 4px 5px;
 }
-{
-
+.hidden{
+  display:none
 }
 body {
     font-size: 48px;
