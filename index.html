@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
+
 <head>
     <meta charset="UTF-8" />
     <title>Topgyal Website</title>
 
     <!-- make html good on all devices -->
-    <!-- responsive design -->
-    <meta name="viewport" content="width=device-width,initial-scale=1" /> 
+    <!-- bootstrap responsive design  -->
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <!-- device-width is 100vw or 100% of viewport -->
+
     <!-- link javascript -->
     <script src="/script/script.js"></script>
     <!-- link css  -->
@@ -21,8 +23,9 @@
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-    <!-- bootstrap CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap css cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -35,39 +38,57 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body class="w3-gray">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<body>
+    <!-- bootstrap js cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!-- can include popper to use dropdowns, popovers and tootips -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
 
-    <div class="w3-top w3-bar w3-white w3-padding w3-card w3-wide ">
+    <div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Topgyal Gurung</a>
 
-        <!-- Navigation (Stays on Top) -->
-        <div class="w3-bar " id="myLinks">
-            <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-text-black w3-hover-text-red"><i
-                    class="fa fa-home"></i></a>
-            <a href="#about"
-                class="w3-bar-item w3-button w3-hover-none w3-text-black w3-hover-text-red w3-hide-small ">About</a>
-            <a href="#portfolio"
-                class="w3-bar-item w3-button w3-hover-none w3-text-black w3-hover-text-red w3-hide-small">Portfolio</a>
-                
-            <a href="#contact"
-                class="w3-bar-item w3-button w3-hover-none w3-text-black w3-hover-text-red w3-hide-small">Contact</a>
-            <input type="text" class="w3-bar-item w3-input w3-hide-small" placeholder="Search.."> <a href="#search"
-                class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-search"></i></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span> </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li> 
+                      <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Portfolio
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">CV</a></li>
+                          <li><a class="dropdown-item" href="#">Medium Blog</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>      
 
-            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
-                onclick="myFunction()">&#9776;</a>
-        </div>
-
-        <div id="demo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">
-            <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-text-black w3-hover-text-red w3-mobile"><i
-                    class="fa fa-home"></i></a>
-            <a href="#about" class="w3-bar-item w3-button">About</a>
-            <a href="#portfolio" class="w3-bar-item w3-button ">Portfolio</a>
-            <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-            <input type="text" class="w3-bar-item w3-input" placeholder="Search.."> <a href="#search"
-                class="w3-bar-item w3-button"><i class="fa fa-search"></i></a>
-        </div>
-    </div>
 
     <!-- Home -->
     <div class="w3-padding-medium" id="main">
@@ -78,136 +99,131 @@
             <!-- <div class="w3-container w3-tooltip w3-center  w3-card-2 " id="photo"style="width: 250px">
                 <img src="/assets/img/topgyal.jpg" class="box" alt="me" style="width: 100%" />
                 <p>Topgyal Gurung</p> -->
-            </div>
-        </header>
+    </div>
+    </header>
 
-        <!-- About -->
-        <div class="w3-content w3-justify w3-navy w3-padding-64 title-box text-center" id="about">
-            <h2 class="w3-text-white">About me </h2>
-            <h1 class="w3-center"></h1>
-            <p>
-                Bachelors in Computer Science from Hunter College.
-                <li>
-                    Past Data engineering intern experience with real estate predictive
-                    analytics company.
-                </li>
-                <li>
-                    Full Stack Web Development summer 2019 bootcamp cohort with CUNY2X
-                    TTP(Tech Talent Pipeline) at Hunter College.
-                </li>
-                <li>
-                    Machine learning research experience in NLP
-                    and machine translation.
-                </li>
-                <li>
-                    Experience with MSBI Full Stack: T-SQL in SSMS, SQL Server, SSIS,
-                    SSRS for report and Microsoft Power BI and Tableau for data
-                    visualization.
-                </li>
-                <br/>
-                <!-- bootstrap button -->
-                <button type="button" class="btn btn-regular btn-light btn-outline-light">
-                    <a href="./assets/pdf/Topgyal_Gurung_Revised_Resume_Jan2023.pdf">Download Resume</a>
-                </button>
-            </p>
-        </div>
+    <!-- About -->
+    <div class="w3-content w3-justify w3-navy w3-padding-64 title-box text-center" id="about">
+        <h2 class="w3-text-white">About me </h2>
+        <h1 class="w3-center"></h1>
+        <p>
+            Bachelors in Computer Science from Hunter College.
+            Past Data engineering intern experience with real estate predictive
+            analytics company.
 
-        <!-- Portfolio Section -->
-        <section id="portfolio" class="services-mf pt-5 route">
-            <!-- first element when setting up bootstrap is container element, need before we use bootstrap grid system   -->
+            Full Stack Web Development summer 2019 bootcamp cohort with CUNY2X
+            TTP(Tech Talent Pipeline) at Hunter College.
 
-            <div class="container">
-                <!-- container -->
-                <div class="row">
-                    <!-- row -->
-                    <div class="col-sm-12">
-                        <!-- column -->
-                        <div class="title-box text-center">
-                            <h2 class="title-a w3-text-white">
-                                Portfolios
+            Machine learning research experience in NLP
+            and machine translation.
+
+            Experience with MSBI Full Stack: T-SQL in SSMS, SQL Server, SSIS,
+            SSRS for report and Microsoft Power BI and Tableau for data
+            visualization.
+            <br />
+            <!-- bootstrap button -->
+            <button type="button" class="btn btn-regular btn-light btn-outline-light">
+                <a href="./assets/pdf/Topgyal_Gurung_Revised_Resume_Jan2023.pdf">Download Resume</a>
+            </button>
+        </p>
+    </div>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="services-mf pt-5 route">
+        <!-- first element when setting up bootstrap is container element, need before we use bootstrap grid system   -->
+
+        <div class="container">
+            <!-- container -->
+            <div class="row">
+                <!-- row -->
+                <div class="col-sm-12">
+                    <!-- column -->
+                    <div class="title-box text-center">
+                        <h2 class="title-a w3-text-white">
+                            Portfolios
                             </h3>
                             <div class="line-mf"></div>
-                        </div>
                     </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="service-box">
-                            <div class="service-content">
-                                <h2 class="s-title"> Portfolio</h2>
-                                <a href="https://topgyaltsering.com/cv/">
-                                    <img src="https://www.actitime.com/wp-content/uploads/2021/05/How-to-Build-a-Great-Developer-Portfolio.png"
-                                        class="img-fluid" alt="cv">
-                                    <!-- image fluid image scales to parent column width instead of manually setting the size -->
-                                </a>
-                                <p class="s-description text-center">
-                                    Experiences, Projects and Certificates
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="service-box">
-                            <div class="service-content">
-                                <h2 class="s-title">Blogs</h2>
-                                <a href="https://topgyaltsering.medium.com">
-                                    <img src="https://miro.medium.com/max/1200/1*jfdwtvU6V6g99q3G7gq7dQ.png"
-                                        class="img-fluid" alt="medium">
-                                </a>
-
-                                <p class="s-description text-center">
-                                    Personal Medium Tech Articles
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="service-box">
-                            <div class="service-content">
-                                <h2 class="s-title">Data Science </h2>
-                                <a href="https://medium.com/data-revolution">
-                                    <img src="https://miro.medium.com/max/878/0*uwduHzHYTM7z5VF_.jpeg" alt="medium"
-                                        class="img-fluid" alt="data ">
-                                </a>
-                                <p class="s-description text-center">
-                                    Big Data, Machine Learning and Database Blogs
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- <div class="row"> -->
-                    <div class="col-md-3">
-                        <div class="service-box">
-                            <div class="service-content">
-                                <h2 class="s-title">Cyber Security</h2>
-                                <a href="https://medium.com/cybersecured">
-                                    <img src="https://www.foodsafetynews.com/files/2022/04/cybersecurity.jpg"
-                                        class="img-fluid">
-                                </a>
-                                <p class="s-description text-center">
-                                    Cybersecurity Resources
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
-        </section>
 
-        <!-- End Portfolio Section -->
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="service-box">
+                        <div class="service-content">
+                            <h2 class="s-title"> Portfolio</h2>
+                            <a href="https://topgyaltsering.com/cv/"> CV
+                                <!-- <img src="https://www.actitime.com/wp-content/uploads/2021/05/How-to-Build-a-Great-Developer-Portfolio.png"
+                                        class="img-fluid" alt="cv"> -->
+                                <!-- image fluid image scales to parent column width instead of manually setting the size -->
+                            </a>
+                            <p class="s-description text-center">
+                                Experiences, Projects and Certificates
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-       
+                <div class="col-md-3">
+                    <div class="service-box">
+                        <div class="service-content">
+                            <h2 class="s-title">Blogs</h2>
+                            <a href="https://topgyaltsering.medium.com">Medium.com
+                                <!-- <img src="https://miro.medium.com/max/1200/1*jfdwtvU6V6g99q3G7gq7dQ.png"
+                                        class="img-fluid" alt="medium"> -->
+                            </a>
+
+                            <p class="s-description text-center">
+                                Personal Medium Tech Articles
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="service-box">
+                        <div class="service-content">
+                            <h2 class="s-title">Data Science </h2>
+                            <a href="https://medium.com/data-revolution"> Data Revolution
+                                <!-- <img src="https://miro.medium.com/max/878/0*uwduHzHYTM7z5VF_.jpeg" alt="medium"
+                                        class="img-fluid" alt="data "> -->
+                            </a>
+                            <p class="s-description text-center">
+                                Big Data, Machine Learning and Database Blogs
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="row"> -->
+                <div class="col-md-3">
+                    <div class="service-box">
+                        <div class="service-content">
+                            <h2 class="s-title">Cyber Security</h2>
+                            <a href="https://medium.com/cybersecured"> Cybersecurity
+                                <!-- <img src="https://www.foodsafetynews.com/files/2022/04/cybersecurity.jpg"
+                                        class="img-fluid"> -->
+                            </a>
+                            <p class="s-description text-center">
+                                Cybersecurity Resources
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- End Portfolio Section -->
+
+
 
     <!-- Footer -->
     <div class="container-fluid text-center w3-padding-8">
         <footer class="w3-center w3-content w3-padding-small-16 w3-text-black w3-hide-small" id="footer">
 
-            <div class="container">
+            <!-- <div class="container">
                 <div class="row">
 
                     <div class="col-12 col-lg-6">
@@ -232,9 +248,9 @@
                     
                     </div>
 
-                    <div class="row">
-                        
-                    <div class="col-12 col-lg-12">
+                    <div class="row"> -->
+
+            <!-- <div class="col-12 col-lg-12">
                         <div class="col-12 col-lg-6">
                             <div
                                 style="max-width:100%;list-style:none; transition: none; overflow:hidden; width:350px;height:350px; margin:0 auto;">
@@ -244,32 +260,32 @@
                                 </div>
                                 <!-- <a class="googlemaps-html" href="https://changing.hosting" id="grabmap-authorization">Changing
                                     Hosting</a> -->
-                                <style>
-                                    #mymap-display img.text-marker {
-                                        max-width: none !important;
-                                        background: none !important;
-                                    }
-    
-                                    img {
-                                        max-width: none
-                                    }
-                                </style>
-                            </div>
-                        </div>
+            <style>
+                #mymap-display img.text-marker {
+                    max-width: none !important;
+                    background: none !important;
+                }
 
-                        <div class="w3-content w3-text-brown text-center" id="contact">
-                           
-                
-                            <h4 class="w3-text-black">Contact:</h4>
-                            <h6>
-                                <a href="mailto:topgyaltsering3@gmail.com">topgyaltsering3@gmail.com</a></h5>
-                        </div>
-                        <h6> Created by Topgyal Gurung © 2022</h6>
+                img {
+                    max-width: none
+                }
+            </style>
+    </div>
+    </div> -->
 
-                    </div>
-                </div>
-            </div>
-        </footer>
+    <div class="w3-content w3-text-brown text-center" id="contact">
+
+
+        <h4 class="w3-text-black">Contact:</h4>
+        <h6>
+            <a href="mailto:topgyaltsering3@gmail.com">topgyaltsering3@gmail.com</a></h5>
+    </div>
+    <!-- <h6> Created by Topgyal Gurung © 2022</h6> -->
+
+    </div>
+    </div>
+    </div>
+    </footer>
     </div>
 
     </div>
