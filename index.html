@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Topgyal Website</title>
+    <title>Topgyal Gurung</title>
+    <style></style>
 
     <!-- make html good on all devices -->
     <!-- bootstrap responsive design  -->
@@ -11,9 +12,14 @@
     <!-- device-width is 100vw or 100% of viewport -->
 
     <!-- link javascript -->
-    <script src="/script/script.js"></script>
+    <script src="/static/script.js">
+      $("button").on("click",function(){
+      alert("download resume")
+      })
+    </script>
     <!-- link css  -->
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link href="/normalize.css"rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
     <!-- w3 css -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 
@@ -78,9 +84,6 @@
         
             </div>
           </nav>     
-
-
-
     <!-- About -->
     <div class="w3-content w3-justify w3-navy w3-padding-64 title-box " id="about">
     
@@ -96,13 +99,15 @@
             <a class="navbar-brand" href="#">About Me</a>
           </nav>
           <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+            <article>
             <h4 id="scrollspyHeading1">Education</h4>
-            <p> 
+            <ul> 
               <li>Bachelors in Computer Science from Hunter College. </li>
               <li>Python for Everybody - University of Michigan Certification,</li>
               <li>Codepath Cybersecurity course for Baruch College</li>
               <li>in progress IBM Data Engineering certification</li>
-            </p>
+            </ul>
+          </article>
             <h4 id="scrollspyHeading2">Experience</h4>
             <p>
              <li> Past Data engineering intern experience with real estate predictive analytics company.  </li>
